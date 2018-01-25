@@ -10,7 +10,7 @@ print html
 myname = "Lila"
 print myname
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
+root = lxml.html.fromstring(html)
 # root.cssselect("div[align='left']")
 #
 # # Write out to the sqlite database using scraperwiki library
