@@ -11,7 +11,15 @@ myname = "Lila"
 print myname
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")("a)
+#root.cssselect("div[align='left']")("a)
+#grab all the a tags and put in selectstuff list variable
+selectstuff = root.cssselect ("a")
+print selectstuff
+#start looping through the list of results
+for i in selectstuff:
+    print i.text # .text grabs the text content of the tag in i
+    print i.attrib ['href'] # .attrib grabs the value of the attribute specified 
+
 print root
 listylist=["p1","p2","p3"]
 print listylist
