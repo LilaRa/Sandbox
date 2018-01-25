@@ -6,6 +6,7 @@ import scraperwiki
 print "Hello World"
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
+print html
 myname = "Lila"
 print myname
 # # Find something on the page using css selectors
